@@ -228,9 +228,9 @@ Requirements:
 - Ensure compliance with systematic review writing standards
 - Remove redundancy and improve sentence structure
 - Maintain appropriate academic tone throughout
-- CRITICAL: Preserve ALL citations in the format [1], [2], [1,2], etc. exactly as they appear
+- CRITICAL: Preserve ALL citations in the format [1], [2], [1,2], etc. exactly as they appear, if present in the original text.
 
-IMPORTANT: Return ONLY the improved text. Do not include explanations, comments, or descriptions of changes made. Keep all citations [1], [2], etc. in their exact positions or move them appropriately within sentences.
+IMPORTANT: Return ONLY the improved text. Do not include explanations, comments, or descriptions of changes made. Keep all citations [1], [2], etc. in their exact positions or move them appropriately within sentences - if present in the original text.
 
 Original text:
 {text}
