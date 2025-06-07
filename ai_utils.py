@@ -207,6 +207,7 @@ Important guidelines:
 - Use active voice where appropriate
 - Ensure proper scientific terminology
 - Keep the same general length unless significant improvement requires changes
+- Do not insert reference where it does not exist
 - Focus on systematic review and meta-analysis conventions"""
 
     def _create_improvement_prompt(self, text: str, context: str) -> str:
