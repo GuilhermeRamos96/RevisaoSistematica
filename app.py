@@ -550,29 +550,29 @@ class PRISMAApp:
             
             with col1:
                 databases = st.number_input(
-                    "Registros identificados em bases de dados:",
+                    "Artigos identificados em bases de dados:",
                     min_value=0,
                     value=st.session_state.diagram_data['databases']
                 )
                 registers = st.number_input(
-                    "Registros identificados em registros:",
+                    "Artigos identificados em registros:",
                     min_value=0,
                     value=st.session_state.diagram_data['registers']
                 )
             
             with col2:
                 duplicates_removed = st.number_input(
-                    "Registros duplicados removidos:",
+                    "Artigos duplicados removidos:",
                     min_value=0,
                     value=st.session_state.diagram_data['duplicates_removed']
                 )
                 automation_excluded = st.number_input(
-                    "Registros excluídos por ferramentas automatizadas:",
+                    "Artigos excluídos por ferramentas automatizadas:",
                     min_value=0,
                     value=st.session_state.diagram_data['automation_excluded']
                 )
                 other_removed = st.number_input(
-                    "Registros removidos por outras razões:",
+                    "Artigos removidos por outras razões:",
                     min_value=0,
                     value=st.session_state.diagram_data['other_removed']
                 )
@@ -582,24 +582,24 @@ class PRISMAApp:
             
             with col3:
                 records_screened = st.number_input(
-                    "Registros triados:",
+                    "Artigos triados:",
                     min_value=0,
                     value=st.session_state.diagram_data['records_screened']
                 )
                 reports_sought = st.number_input(
-                    "Relatórios buscados para recuperação:",
+                    "Artigos buscados para recuperação:",
                     min_value=0,
                     value=st.session_state.diagram_data['reports_sought']
                 )
             
             with col4:
                 records_excluded = st.number_input(
-                    "Registros excluídos:",
+                    "Artigos excluídos:",
                     min_value=0,
                     value=st.session_state.diagram_data['records_excluded']
                 )
                 reports_not_retrieved = st.number_input(
-                    "Relatórios não recuperados:",
+                    "Artigos não recuperados:",
                     min_value=0,
                     value=st.session_state.diagram_data['reports_not_retrieved']
                 )
@@ -609,7 +609,7 @@ class PRISMAApp:
             
             with col5:
                 reports_assessed = st.number_input(
-                    "Relatórios avaliados para elegibilidade:",
+                    "Artigos avaliados para elegibilidade:",
                     min_value=0,
                     value=st.session_state.diagram_data['reports_assessed']
                 )
