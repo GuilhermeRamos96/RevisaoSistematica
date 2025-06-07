@@ -210,7 +210,7 @@ class PRISMADiagram:
             linewidth=1
         )
         self.ax.add_patch(assessed_box) 
-        self.ax.text(3.25, 3.5, f"Reports assessed for eligibility\n(n = {data.get('reports_assessed', 0)})", #aqui
+        self.ax.text(3.25, 4.25, f"Reports assessed for eligibility\n(n = {data.get('reports_assessed', 0)})", 
                     ha='center', va='center', fontsize=10, multialignment='center')
         
         # Reports excluded with reasons 
