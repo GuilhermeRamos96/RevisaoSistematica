@@ -213,12 +213,12 @@ class PRISMADiagram:
         self.ax.text(3.25, 4.25, f"Reports assessed for eligibility\n(n = {data.get('reports_assessed', 0)})", 
                     ha='center', va='center', fontsize=10, multialignment='center')
         
-        # Reports excluded with reasons - FIXED FORMATTING
+        # Reports excluded with reasons 
         exclusion_reasons = data.get('exclusion_reasons', [])
         
         # Calculate box height based on number of reasons (minimum 1.5, add 0.3 per reason)
         box_height = max(1.5, 1.0 + len(exclusion_reasons) * 0.35)
-        box_y = 5 - box_height/2  # Center the box vertically
+        box_y = 3 - box_height/2  # Center the box vertically
         
         excluded_box = FancyBboxPatch(
             (6.5, box_y), 4.5, box_height,
