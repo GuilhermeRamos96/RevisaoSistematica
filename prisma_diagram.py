@@ -210,7 +210,7 @@ class PRISMADiagram:
             linewidth=1
         )
         self.ax.add_patch(assessed_box) 
-        self.ax.text(3.25, 4.25, f"Reports assessed for eligibility\n(n = {data.get('reports_assessed', 0)})", 
+        self.ax.text(3.25, 4.25, f"Reports assessed for eligibility\n(n = {data.get('reports_assessed', 0)})", # texto Caixa 1 elegibilidade 
                     ha='center', va='center', fontsize=10, multialignment='center')
         
         # Reports excluded with reasons 
@@ -218,7 +218,7 @@ class PRISMADiagram:
         
         # Calculate box height based on number of reasons (minimum 1.5, add 0.3 per reason)
         box_height = max(1.5, 1.0 + len(exclusion_reasons) * 0.35)
-        box_y = 4 - box_height/2  # Center the box vertically #aqui
+        box_y = 4 - box_height/2  # Caixa 2 elegibilidade 
         
         excluded_box = FancyBboxPatch(
             (6.5, box_y), 4.5, box_height,
@@ -246,7 +246,7 @@ class PRISMADiagram:
         # Remove trailing newline
         exclusion_text = exclusion_text.strip()
         
-        self.ax.text(8.75, 5, exclusion_text, ha='center', va='center', 
+        self.ax.text(8.75, 4.5, exclusion_text, ha='center', va='center', # texto da Caixa 2 elegibilidade 
                     fontsize=9, multialignment='center')
     
     def _draw_included_section(self, data: Dict[str, Any], colors: Dict[str, str]):
