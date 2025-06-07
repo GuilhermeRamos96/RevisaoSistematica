@@ -79,6 +79,14 @@ class PRISMAApp:
     def render_sidebar(self):
         """Render the navigation sidebar"""
         st.sidebar.title("📊 Ferramenta PRISMA 2020")
+        
+        # Botão biblioparser
+        st.sidebar.link_button(
+            "Ir para BiblioParser",
+            "https://biblioparser.streamlit.app/",
+            help="Abre a aplicação BiblioParser em uma nova aba"
+         )
+
         st.sidebar.markdown("---")
         
         # AI Configuration Section
