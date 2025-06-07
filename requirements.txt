@@ -5,3 +5,4 @@ reportlab
 matplotlib
 requests
 groq ; extra == "ai"
+openai>=1.3
