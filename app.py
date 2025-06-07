@@ -744,7 +744,7 @@ class PRISMAApp:
         st.title("📤 Exportar Revisão Sistemática")
         
         st.markdown("""
-        Exporte sua revisão sistemática em diferentes formatos para submissão ou compartilhamento.
+        Exporte sua revisão sistemática em diferentes formatos.
         """)
         
         # Prepare export data
