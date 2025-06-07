@@ -246,7 +246,7 @@ class PRISMADiagram:
         # Remove trailing newline
         exclusion_text = exclusion_text.strip()
         
-        self.ax.text(8.75, 4.5, exclusion_text, ha='center', va='center', # texto da Caixa 2 elegibilidade 
+        self.ax.text(8.75, 4.25, exclusion_text, ha='center', va='center', # texto da Caixa 2 elegibilidade 
                     fontsize=9, multialignment='center')
     
     def _draw_included_section(self, data: Dict[str, Any], colors: Dict[str, str]):
